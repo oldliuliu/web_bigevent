@@ -1,7 +1,7 @@
 // 获取用户基本信息
 $(function () {
-    getUserInfo();
-
+   
+     getUserInfo();
     const layer = layui.layer;
     // 退出登录
     $("#btnLogout").click(() => {
@@ -30,7 +30,7 @@ $.ajax({
     // },
     success: (res) => {
         if (res.status !== 0) return layer.msg("数据请求失败！");
-        console.log(res);
+        // console.log(res);
         // 调用 renderAvatar 渲染用户头像
         renderAvatar(res.data);
     },
@@ -65,9 +65,9 @@ const renderAvatar = (user) => {
     }
 };
 
-
-
-
-
 // 调用 getUserInfo 函数获取用户基本信息
-getUserInfo();
+// getUserInfo();
+
+
+
+
